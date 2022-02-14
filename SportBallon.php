@@ -1,6 +1,6 @@
 <?php
 
-class SportBallons extends Sport
+class SportBallon extends Sport
 {
     private $largeur;
     private $longueur;
