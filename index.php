@@ -8,6 +8,13 @@ include 'SportRelais.php';
 include 'SportBallon.php';
 include 'data.php';
 
+$dbh = new PDO('mysql:host=localhost;dbname=gestionclub', username: 'root',password: '');
+foreach ($dbh->query('SELECT * from club') as $row){
+    print_r($row);
+}
+
+var_dump($dbh);
+
 echo "<br>Projet Heritage et Interface<br>";
 
 //Liste des clubs

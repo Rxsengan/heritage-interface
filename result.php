@@ -16,7 +16,7 @@ if (isset($_GET['id']) || isset($_POST['IdClub'])){
     else{
         $idClub = $_POST['IdClub'];
     }
-    echo 'Liste des sports de '.$club[$idClub]->getNomClub();
+    echo 'Liste des sports : '.$club[$idClub]->getNomClub()."<br>";
     $sp1 = $club[$idClub]->getLesSports();
     foreach ($sp1 as $keySp1 => $valueSp1){
         echo $valueSp1->getDescription();
